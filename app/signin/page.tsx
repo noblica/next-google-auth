@@ -1,6 +1,4 @@
-import { redirect } from "next/navigation";
 import { Metadata } from "next";
-// import { getServerSession } from "next-auth";
 import { SignInButton } from "../components/SignInButton";
 
 export const metadata: Metadata = {
@@ -9,12 +7,6 @@ export const metadata: Metadata = {
 }
 
 export default async function SignInPage() {
-  // const session = await getServerSession();
-
-  // if (session && session.user) {
-  //   redirect("/")
-  // }
-
   return (
     <>
       <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8">
